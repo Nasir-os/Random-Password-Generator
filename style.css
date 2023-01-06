@@ -10,7 +10,7 @@ html,
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: #F9F9FD;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  background-color: #1f2937;
+  background-color: #0a123c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
   border-radius: var(--border-radius);
 }
 .heading span {
-  color: #10b981;
+  color: #FB6169;
   display: block;
 }
 .main-btns-cont{
@@ -42,7 +42,7 @@ body {
   font-weight: 200;
 }
 .generate-btn, .copy-btn {
-  background-color: #10b981;
+  background-color: #FB6169;
   color: white;
   padding: 9px 10px;
   display: flex;
@@ -52,7 +52,6 @@ body {
 }
 .copy-btn{
 background-color: #076497;
-display: none;
 }
 .copy-btn::before {
   font-family: "Material Icons";
@@ -87,7 +86,7 @@ display: none;
 }
 .new-password{
   text-align: center;
-  background-color: #273549;
+  background-color: #fefeff12;
   padding-left: 8px;
   color: white;
   min-height: 3em;
@@ -99,9 +98,9 @@ display: none;
   position: relative;
 }
 .copied {
-  border-bottom: solid 0.5px #10b981;
+  border-bottom: solid 0.5px #FB6169;
   transform: translateY(-1px);
-  color: #10b981;
+  color: #fb6169;
 }
 .copied::before {
   content: "copied!";
@@ -114,7 +113,7 @@ display: none;
 
 .options-container {
   border-radius: var(--border-radius);
-  background-color: #273549;
+  background-color: #fefeff12;
   font-size: 0.7rem;
   width: 100%;
   padding: var(--padding);
@@ -126,7 +125,7 @@ display: none;
  justify-content: space-between;
 }
 input{
-  accent-color: #10b981;
+  accent-color: #FB6169;
 }
 .additional-options div{
     display: flex;
@@ -160,7 +159,7 @@ input[type="range"]{
 }
 
 #slider-value{
-  background: #10b981;
+  background: #FB6169;
   color: #3B3B3B;
   font-weight: bold;
   padding:2px 7px;
