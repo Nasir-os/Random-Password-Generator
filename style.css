@@ -14,7 +14,7 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-  font-family: "Karla", sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .container {
@@ -86,7 +86,7 @@ background-color: #076497;
 }
 .new-password{
   text-align: center;
-  background-color: #fefeff12;
+  background-color: #fefeff0e;
   padding-left: 8px;
   color: white;
   min-height: 3em;
@@ -100,7 +100,7 @@ background-color: #076497;
 .copied {
   border-bottom: solid 0.5px #FB6169;
   transform: translateY(-1px);
-  color: #fb6169;
+  background-color: #fb616910;
 }
 .copied::before {
   content: "copied!";
@@ -113,7 +113,7 @@ background-color: #076497;
 
 .options-container {
   border-radius: var(--border-radius);
-  background-color: #fefeff12;
+  background-color: #fefeff0e;
   font-size: 0.7rem;
   width: 100%;
   padding: var(--padding);
