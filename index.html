@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Random Password Generator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 class="title"> Generate a <span>random password</span></h1>
-        <p>Never use an isecure password again.</p>
-        <button>Generate passwords</button>
-        <hr>
+      <h1 class="heading">Generate a <span>random password</span></h1>
+      <p>Never use an isecure password again.</p>
+      <div class="main-btns-cont">
+        <button class="generate-btn">Generate password</button>
+        <button class="copy-btn">Copy to clipboard</button>
+      </div>
+    
+      <hr />
+      <div class="generated-passwords-container">
+        <button class="new-password"></button>
+      </div>
+      <div class="options-container">
+        <!-- <h5>Characters length</h5> -->
+        <div class="chrac-range-container">
+          <label for="chrac-slider">Length</label>
+        <input type="range" name="chrac-length" id="chrac-slider" min="5" max="128" value="15" oninput="updateSlider(this.value)">
+        <div id="slider-value">15</div>
+      </div>
+        <!-- <h5>Additional Options</h5> -->
+        <div class="additional-options">
+          <div class="letters-boxes-container">
+        <label for="uppercase-chrac">
+        <input type="checkbox" name="uppercase-chrac" id="uppercase-chrac" pattern="[^A-Z]"  checked>
+    A-Z </label>
+</label>
+        <label for="lowercase-chrac">
+        <input type="checkbox" name="lowercase-chrac" id="lowercase-chrac" pattern="[^a-z]" checked>
+    a-z</label>
+</label>
     </div>
-</body>
+    <div class="num-symbol-boxes-container">
+        <label for="number-chrac">
+        <input type="checkbox" name="number-chrac" id="number-chrac" pattern="[^0-9]"  checked>
+        0-9</label>
+        <label for="symbol-chrac">
+        <input type="checkbox" name="symbol-chrac" id="symbol-chrac" pattern="[^\W_]" checked>
+        !@#$%^&*</label>
+    </div>
+      </div>
+    </div>
+  </body>
 </html>
